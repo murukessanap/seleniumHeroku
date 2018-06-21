@@ -52,11 +52,11 @@ def get():
         print("Timed out waiting for page to load")
         exit()
     username = browser.find_element_by_id("j_username")
-    username.send_keys("murukessanap@gmail.com")
+    username.send_keys("*******************")
     browser.find_element_by_css_selector('.newBtn.blueBtn.loginNxt.mt-10').click()
 
     password = browser.find_element_by_id("j_password")
-    password.send_keys("apm@indian007")
+    password.send_keys("*****************")
 
     browser.find_element_by_css_selector('.newBtn.blueBtn.mt-15.submitBtn.recaptchSubmit').click()
     browser.get('https://www.urbanpro.com/register/providerDashboard')
